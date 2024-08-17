@@ -18,7 +18,10 @@ env.config()
 app.use(bodyParser.json())
 app.use(cors())
 
-
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+  });
+  
 app.use('/api/vendor',vendorRegistrationRoute)
 app.use('/api/vendor',vendorLoginRoute)
 app.use('/api/client',clientLoginRoute)
