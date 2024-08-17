@@ -27,7 +27,8 @@ const loginVendorController = async (req, res) => {
         if (!user) {
             return res.status(403).json({
                 Success: false,
-                Message: "User not found. Please check the provided information and try again."
+                Message: "User not found. Please check the provided information and try again.",
+            
             });
         }
 

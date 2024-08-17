@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken')
 
 const VendorAuthenticate=(req,res,next)=>{
     const token= req.body.token 
-    console.log(req.body)
+    
 
     // Middleware for checking vendor is authenticated
     if(token==="undefined"){
