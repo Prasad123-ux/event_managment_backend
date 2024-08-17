@@ -1,7 +1,7 @@
-// const mongoose= require('mongoose')
-const {mongoose} = require('../../Config/db')
+ const mongoose= require('mongoose')
+// const {mongoose} = require('../../Config/db')
 
-const vendorSchema=mongoose.Schema({
+const vendorSchema= mongoose.Schema({
     name:{
         type:String,
         required:true
