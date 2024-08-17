@@ -30,7 +30,7 @@ app.use('/api/vendor',editEventDataRoute)
 app.use('/api/vendor',deleteMediaRoute)
 
 // getting the port from env file
-const port= process.env.PORT
+const port= process.env.PORT || 6000
 
 
 // starting the server
